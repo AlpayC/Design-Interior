@@ -3,16 +3,8 @@
     src: url(../fonts/Lora-Regular.ttf);
 }
 @font-face {
-    font-family: lorab;
-    src: url(../fonts/Lora-Bold.ttf);
-}
-@font-face {
     font-family: workr;
     src: url(../fonts/WorkSans-Regular.ttf);
-}
-@font-face {
-    font-family: workb;
-    src: url(../fonts/WorkSans-Bold.ttf);
 }
 
 :root{
@@ -59,6 +51,7 @@ h2{
     font-size: 6rem;
     font-family: lorar,Arial, Helvetica, sans-serif;
 }
+
 h3{
     font-family: workr,Arial, Helvetica, sans-serif;
     color: var(--gray);
@@ -128,12 +121,6 @@ nav img{
     font-family: workr,Arial, Helvetica, sans-serif;
     font-size: 2rem;
 }
-/* .menuwrapper a:hover{
-    color: var(--gray);
-    transition: ease 0.5s;
-    text-decoration: underline 2px;
-} */
-
 /* STORY SECTION */
 
 .story{
@@ -345,8 +332,6 @@ footer a{
     nav img{
         padding-left:1rem;
     }
-
-    
     .menuwrapper a{
         color: var(--white);
         font-family: workr,Arial, Helvetica, sans-serif;
