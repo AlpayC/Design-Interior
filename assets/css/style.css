@@ -404,7 +404,7 @@ footer a{
         height: 100%;
     }
     .contact article {
-        width:80vw;
+        width:100vw;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -421,7 +421,8 @@ footer a{
         font-size: 2rem;
     }
     form{
-        padding:0 4rem;
+        padding:0rem;
+        width: 80vw;
     }
     form input{
         padding: 1rem 10rem;
