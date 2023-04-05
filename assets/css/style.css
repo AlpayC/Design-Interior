@@ -1,0 +1,421 @@
+@font-face {
+    font-family: lorar;
+    src: url(../fonts/Lora-Regular.ttf);
+}
+@font-face {
+    font-family: lorab;
+    src: url(../fonts/Lora-Bold.ttf);
+}
+@font-face {
+    font-family: workr;
+    src: url(../fonts/WorkSans-Regular.ttf);
+}
+@font-face {
+    font-family: workb;
+    src: url(../fonts/WorkSans-Bold.ttf);
+}
+
+:root{
+    --firstcolor:#2e2e2e ;
+    --secondcolor: #1d2c2f;
+    --black: #000;
+    --white: #fff;
+    --gray: gray;
+    --videoyt: "https://www.youtube.com/watch?v=GI71fXmRrLM";
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+header{
+    background-color: var(--white);
+    height:100vh;
+}
+h1{
+    color: var(--black);
+    font-family: lorar,Arial, Helvetica, sans-serif;
+    font-size: 14rem;
+    letter-spacing: 9rem;
+    margin-right:-9rem;
+    margin-bottom: 5rem;
+}
+
+h2{
+    font-size: 6rem;
+    font-family: lorar,Arial, Helvetica, sans-serif;
+}
+h3{
+    font-family: workr,Arial, Helvetica, sans-serif;
+    color: var(--gray);
+    font-size: 2.1rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+/* HERO SECTION */
+
+.hero{
+    height:100vh;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;   
+   
+}
+.hero .title{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:0 10rem;
+    text-align: center;
+    width: 40vw;
+}
+.hero .heroimg{
+    background: url(../img/design-interior-1.jpg) center no-repeat;
+    background-size: cover;
+    width: 60vw;
+    height:100vh;
+}
+
+.hero p {
+    font-family: lorar,Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+/* NAV SECTION */
+
+nav{
+    min-height: 10rem;
+    background-color: var(--firstcolor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:sticky;
+    top:0;
+   
+}
+nav img{
+    padding-left:3rem;
+}
+
+/* STICKY SETTING */
+
+.menuwrapper {
+    min-width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.menuwrapper a{
+    color: var(--white);
+    font-family: workr,Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+/* STORY SECTION */
+
+.story{
+    background-color: var(--firstcolor);
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.story img{
+    padding-top: 2rem;
+    width: 55vw;
+    max-height: 80vh;
+}
+.story article{
+    max-width: 40vw;
+    color: var(--white);
+    padding:0 10rem 0 0 ;
+
+}
+.story article h2{
+    text-align: center;
+       margin-bottom: 4rem;
+}
+.story p{
+    font-family: workr;
+    font-size: 2.1rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+/* FEATURED SECTION */
+.featured{
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+    height: 100vh;
+}
+.featured h2,.featured h3{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.featured article p{
+    font-family: workr;
+    font-size: 2.1rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    max-width: 90%;
+}
+.imgcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+      
+}
+
+.imgcontainer div {
+    padding:2rem;
+}
+
+.imgcontainer div img {
+    max-width: 100%;
+    align-self:center;
+}
+/* CONTACT SECTION */
+.contact{
+    background-color: var(--firstcolor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 5rem;
+    height: 60vh;
+    color: var(--white);
+    padding: 10rem;
+}
+.contact article p{
+    font-family: workr;
+    font-size: 2rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    max-width: 50%;
+}
+.contact h2{
+    margin-bottom: 2rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.2rem;
+    min-width: 30%;
+}
+form input{
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-family: workr;
+}
+input[type="submit"]{
+    max-width: 15%;
+    font-family: workb;
+    padding:0.6rem;
+    letter-spacing: 2px;
+}
+textarea{
+    margin-bottom: 4rem;
+    font-family: workr;
+    padding: 1rem;
+}
+form label{
+    font-family: lorar,Arial, Helvetica, sans-serif;
+    margin-bottom: 0.5rem;
+}
+/* Footer SECTION */
+footer{
+    background-color: var(--secondcolor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 5rem;
+    height: 6vh;
+    color: var(--white);
+    font-size: 1.8rem;
+    padding: 0 4rem;
+}
+
+footer a{
+    color: var(--white);
+}
+.legal{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width:600px) {
+    header{
+        height: 94vh;
+    }
+    .hero{
+        height:100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+}
+    h1{
+        margin-top: 20rem;
+        font-size: 7rem;
+        letter-spacing: 4rem;
+        margin-right:-4rem;
+        margin-bottom: 2rem;
+    }
+        
+    h2{
+        font-size: 4rem;
+        font-family: lorar,Arial, Helvetica, sans-serif;
+    }
+    h3{
+        font-family: workr,Arial, Helvetica, sans-serif;
+        color: var(--gray);
+        font-size: 3rem;
+        line-height: 4rem;
+        margin-bottom: 2rem;
+        letter-spacing: 2px;
+    }
+    .hero .title{
+        width: 80vw;
+    }
+    .hero .title p{
+        width: 80vw;
+        margin-bottom: 5rem;
+    }
+    .hero .heroimg{
+        background: url(../img/design-interior-1.jpg) center no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height:30vh;
+    }
+    nav{
+        min-height: 2rem;
+        position:sticky;
+        top:0;
+    }
+    nav img{
+        padding-left:1rem;
+
+    }
+    
+    /* STICKY SETTING */
+    
+    .menuwrapper a{
+        color: var(--white);
+        font-family: workr,Arial, Helvetica, sans-serif;
+        font-size: 1.6rem;
+        padding: 0.8rem;
+    }
+    .story{
+        background-color: var(--firstcolor);
+        min-height: 95vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+        text-align: left;
+        gap:0;
+    }
+    .story article{
+        margin-top: 10rem;
+        max-width:80vw;
+        padding:0;
+    }
+    .story img{
+        padding:0;
+        width:80vw;
+        margin-bottom: 5rem;
+    }
+    .featured{
+        height: 180vh;
+    }
+    .featured article p{
+        text-align: center;
+        max-width:80vw;
+    }
+    .imgcontainer {
+        flex-direction: column;
+        max-width: 80%;
+    }
+       .imgcontainer h3{
+        font-size: 2rem;
+    }
+    iframe{
+        max-width: 80vw;
+        max-height: 50vh;
+    }
+    .contact{
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+    }
+    .contact article {
+        width:80vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact article p{
+        font-size: 2rem;
+        line-height: 4rem;
+
+        letter-spacing: 2px;
+        max-width: 80%;
+    }
+    input[type="submit"]{
+        max-width: 100%;
+        font-size: 2rem;
+    }
+    form input{
+        padding: 1rem 10rem;
+    }
+    .contact form input,.contact form textarea {
+    text-align: center;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 25vh;
+        color: var(--white);
+        font-size: 1.8rem;
+        padding: 0 0rem;
+        gap:0rem;
+    }
+    
+    footer a{
+        color: var(--white);
+    }
+    .legal{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding:2rem;
+    }
+}
