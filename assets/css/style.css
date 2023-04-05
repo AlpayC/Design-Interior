@@ -37,6 +37,11 @@ html{
 a{
     text-decoration: none;
 }
+.menuwrapper a:hover, a:hover{
+    color: var(--gray);
+    transition: ease 0.5s;
+    text-decoration: underline 2px;
+}
 header{
     background-color: var(--white);
     height:100vh;
@@ -122,6 +127,11 @@ nav img{
     font-family: workr,Arial, Helvetica, sans-serif;
     font-size: 2rem;
 }
+/* .menuwrapper a:hover{
+    color: var(--gray);
+    transition: ease 0.5s;
+    text-decoration: underline 2px;
+} */
 
 /* STORY SECTION */
 
@@ -164,7 +174,8 @@ nav img{
     justify-content: center;
     flex-direction: column;
     gap: 5rem;
-    height: 100vh;
+    height: auto;
+    padding: 5rem 0;
 }
 .featured h2,.featured h3{
     text-align: center;
@@ -195,6 +206,10 @@ nav img{
     max-width: 100%;
     align-self:center;
 }
+.imgcontainer h3{
+    font-size: 1.7rem;
+}
+
 /* CONTACT SECTION */
 .contact{
     background-color: var(--firstcolor);
@@ -235,6 +250,13 @@ input[type="submit"]{
     padding:0.6rem;
     letter-spacing: 2px;
 }
+input[type="submit"]:hover{
+    background-color: var(--secondcolor);
+    color: var(--white);
+    border-radius: 4px;
+    transition: ease 0.5s;
+    border: 2px solid var(--white);
+}
 textarea{
     margin-bottom: 4rem;
     font-family: workr;
@@ -267,7 +289,7 @@ footer a{
     justify-content: space-between;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:576px) {
     header{
         height: 94vh;
     }
@@ -275,177 +297,28 @@ footer a{
         height:100vh;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-}
-    h1{
-        margin-top: 20rem;
-        font-size: 7rem;
-        letter-spacing: 4rem;
-        margin-right:-4rem;
-        margin-bottom: 2rem;
-    }
-        
-    h2{
-        font-size: 4rem;
-        font-family: lorar,Arial, Helvetica, sans-serif;
-    }
-    h3{
-        font-family: workr,Arial, Helvetica, sans-serif;
-        color: var(--gray);
-        font-size: 3rem;
-        line-height: 4rem;
-        margin-bottom: 2rem;
-        letter-spacing: 2px;
-    }
-    .hero .title{
-        width: 80vw;
-    }
-    .hero .title p{
-        width: 80vw;
-        margin-bottom: 5rem;
-    }
-    .hero .heroimg{
-        background: url(../img/design-interior-1.jpg) center no-repeat;
-        background-size: cover;
-        width: 100vw;
-        height:30vh;
-    }
-    nav{
-        min-height: 2rem;
-        position:sticky;
-        top:0;
-    }
-    nav img{
-        padding-left:1rem;
-
-    }
-    
-    /* STICKY SETTING */
-    
-    .menuwrapper a{
-        color: var(--white);
-        font-family: workr,Arial, Helvetica, sans-serif;
-        font-size: 1.6rem;
-        padding: 0.8rem;
-    }
-    .story{
-        background-color: var(--firstcolor);
-        min-height: 140vh;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column-reverse;
-        text-align: left;
-        gap:0;
-    }
-    .story article{
-        margin-top: 10rem;
-        max-width:80vw;
-        padding:0;
-    }
-    .story img{
-        padding:0;
-        width:80vw;
-        margin-bottom: 5rem;
-    }
-    .featured{
-        height: 180vh;
-    }
-    .featured article p{
-        text-align: center;
-        max-width:80vw;
-    }
-    .imgcontainer {
-        flex-direction: column;
-        max-width: 80%;
-    }
-       .imgcontainer h3{
-        font-size: 2rem;
-    }
-    iframe{
-        max-width: 80vw;
-        max-height: 50vh;
-    }
-    .contact{
-        flex-direction: column;
-        text-align: center;
-        height: 100%;
-    }
-    .contact article {
-        width:80vw;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    .contact article p{
-        font-size: 2rem;
-        line-height: 4rem;
-
-        letter-spacing: 2px;
-        max-width: 80%;
-    }
-    input[type="submit"]{
-        max-width: 100%;
-        font-size: 2rem;
-    }
-    form input{
-        padding: 1rem 10rem;
-    }
-    .contact form input,.contact form textarea {
-    text-align: center;
-    }
-    footer{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-        height: 25vh;
-        color: var(--white);
-        font-size: 1.8rem;
-        padding: 0 0rem;
-        gap:0rem;
-    }
-    
-    footer a{
-        color: var(--white);
-    }
-    .legal{
-        width: 80%;
-        display: flex;
         justify-content: space-between;
-        flex-direction: row;
-        padding:2rem;
-    }
-}
-@media only screen and (max-width:768px) {
-    header{
-        height: 94vh;
-    }
-    .hero{
-        height:100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
         align-items: center;
 }
+    .heroimg{
+    
+    }
     h1{
         margin-top: 20rem;
-        font-size: 7rem;
+        font-size: 5rem;
         letter-spacing: 4rem;
         margin-right:-4rem;
         margin-bottom: 2rem;
     }
         
     h2{
-        font-size: 4rem;
+        font-size: 3rem;
         font-family: lorar,Arial, Helvetica, sans-serif;
     }
     h3{
         font-family: workr,Arial, Helvetica, sans-serif;
         color: var(--gray);
-        font-size: 3rem;
+        font-size: 2rem;
         line-height: 4rem;
         margin-bottom: 2rem;
         letter-spacing: 2px;
@@ -456,12 +329,13 @@ footer a{
     .hero .title p{
         width: 80vw;
         margin-bottom: 5rem;
+        font-size: 2rem;
     }
     .hero .heroimg{
         background: url(../img/design-interior-1.jpg) center no-repeat;
         background-size: cover;
         width: 100vw;
-        height:30vh;
+        height:600vh;
     }
     nav{
         min-height: 2rem;
@@ -472,29 +346,33 @@ footer a{
         padding-left:1rem;
 
     }
-    
-    /* STICKY SETTING */
+
     
     .menuwrapper a{
         color: var(--white);
         font-family: workr,Arial, Helvetica, sans-serif;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         padding: 0.8rem;
     }
     .story{
         background-color: var(--firstcolor);
-        min-height: 130vh;
+        height:auto;
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: left;
         gap:0;
     }
     .story article{
-        margin-top: 10rem;
+        margin-top: 1rem;
         max-width:80vw;
         padding:0;
+        margin-bottom: 5rem;
+    }
+    .story article p{
+        font-size: 2rem;
+        line-height: 3rem;
     }
     .story img{
         padding:0;
@@ -502,18 +380,20 @@ footer a{
         margin-bottom: 5rem;
     }
     .featured{
-        height: 260vh;
+        height: auto;
+        padding:10rem 0;
     }
     .featured article p{
         text-align: center;
         max-width:80vw;
+         font-size: 2rem;
     }
     .imgcontainer {
         flex-direction: column;
         max-width: 80%;
     }
        .imgcontainer h3{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     iframe{
         max-width: 80vw;
@@ -553,15 +433,19 @@ footer a{
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
-        height: 25vh;
+        height: auto;
         color: var(--white);
         font-size: 1.8rem;
         padding: 0 0rem;
-        gap:0rem;
+        gap:3rem;
+        padding:2rem 0;
     }
     
     footer a{
         color: var(--white);
+    }
+    .contact p{
+        text-align: left;
     }
     .legal{
         width: 80%;
