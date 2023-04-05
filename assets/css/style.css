@@ -331,7 +331,7 @@ footer a{
     }
     .story{
         background-color: var(--firstcolor);
-        min-height: 95vh;
+        min-height: 140vh;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -483,7 +483,7 @@ footer a{
     }
     .story{
         background-color: var(--firstcolor);
-        min-height: 95vh;
+        min-height: 130vh;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -502,7 +502,7 @@ footer a{
         margin-bottom: 5rem;
     }
     .featured{
-        height: 180vh;
+        height: 260vh;
     }
     .featured article p{
         text-align: center;
